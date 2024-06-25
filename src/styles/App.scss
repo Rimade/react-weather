@@ -1,0 +1,126 @@
+/* #61dafbaa */
+/* #646cffaa */
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+input {
+	outline: none;
+	border: none;
+	width: 330px;
+	height: 55px;
+	border-radius: 5px;
+	padding: 15px 32px;
+	background: #61dafbaa;
+	color: white;
+	margin-bottom: 22px;
+	font-size: 18px;
+	user-select: none;
+	&::placeholder {
+		color: rgba($color: whitesmoke, $alpha: 0.7);
+	}
+}
+
+.click__btn {
+	width: 200px;
+	height: 50px;
+	font-size: 18px;
+	cursor: pointer;
+}
+.temp {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+p {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.title {
+	font-size: 42px;
+	text-align: center;
+}
+
+span {
+	color: #7ff63a;
+	text-align: right;
+}
+
+.weather {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url('../assets/sunny.jpg') center no-repeat;
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		width: 200%;
+		background: #646cffaa;
+		padding: 30px;
+		border: 2px solid #646cffaa;
+		box-shadow: 1px 1px 1px 10px inset #646cffaa;
+		border-radius: 15px;
+		max-width: 768px;
+		transition: all 0.5s;
+		min-height: 500px;
+	}
+	&__link {
+		text-decoration: none;
+		color: whitesmoke;
+	}
+}
+
+.wrapper__part {
+	width: 100%;
+	margin-top: 80px;
+}
+
+@media (max-width: 445px) {
+	.temp,
+	span {
+		font-size: 20px;
+	}
+	h1 > a {
+		font-size: 32px;
+	}
+	input {
+		width: 300px;
+	}
+	.weather__wrapper {
+		padding: 0;
+	}
+}
+
+@media (max-width: 335px) {
+	.temp,
+	span {
+		font-size: 20px;
+		padding: 20px;
+	}
+	h1 > a {
+		font-size: 32px;
+	}
+	input {
+		width: 250px;
+	}
+	.click__btn {
+		width: 200px;
+		height: 50px;
+	}
+}
